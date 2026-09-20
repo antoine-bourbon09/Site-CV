@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Antoine Bourbon - Tél: +33 6 59 04 64 44, Email: antoine.bourbon09@gmail.com. Lycéen en Terminale Générale, spécialités Mathématiques et Physique-Chimie.">
     <title>Contact | Antoine Bourbon</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -11,7 +12,7 @@
         <div class="logo">A.BOURBON</div>
         <div class="nav-links">
             <a href="../index.html">Accueil</a>
-            <a href="parcours.html">Parcours & Spés</a>
+            <a href="parcours.html">Parcours</a>
             <a href="engagements.html">Engagements</a>
             <a href="competences.html">Compétences</a>
             <a href="contact.html" class="active">Contact</a>
@@ -19,57 +20,50 @@
     </nav>
     <main class="container animate-fade">
         <h1 class="page-title">Entrons en Contact</h1>
-        <p class="section-intro">Disponible pour des missions d'annotation de données de pointe, d'évaluation de modèles logiques ou pour toute discussion scientifique.</p>
+        <p class="section-intro">Disponible pour échanger sur des projets scientifiques, des collaborations ou toute autre opportunité. N'hésitez pas à me contacter directement.</p>
 
         <div class="contact-wrapper">
             <div class="contact-info-card">
-                <h2>Coordonnées Directes</h2>
+                <h2>Coordonnées</h2>
                 <div class="info-item">
                     <span class="info-icon">✉️</span>
                     <div>
-                        <span class="info-label">Email Professionnel</span>
+                        <span class="info-label">Email</span>
                         <a href="mailto:antoine.bourbon09@gmail.com" class="info-link">antoine.bourbon09@gmail.com</a>
                     </div>
                 </div>
                 <div class="info-item">
-                    <span class="info-icon">📱</span>
+                    <span class="info-icon">📞</span>
                     <div>
-                        <span class="info-label">Numéro de Téléphone</span>
+                        <span class="info-label">Téléphone</span>
                         <a href="tel:+33659046444" class="info-link">+33 6 59 04 64 44</a>
                     </div>
                 </div>
                 <div class="info-item">
                     <span class="info-icon">📍</span>
                     <div>
-                        <span class="info-label">Zone Géographique</span>
-                        <span class="info-value">8 rue Maurepas, 78000, Versailles, France</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">🚗</span>
-                    <div>
-                        <span class="info-label">Statut Permis</span>
-                        <span class="info-value">Code de la route obtenu (Permis de conduire en cours de préparation)</span>
+                        <span class="info-label">Localisation</span>
+                        <span class="info-value">Versailles, France</span>
                     </div>
                 </div>
             </div>
 
             <div class="contact-form-card">
-                <h2>Envoyer un message direct</h2>
-                <form onsubmit="event.preventDefault(); alert('Merci ! Cette démo de formulaire fonctionne. Sur GitHub, liez ceci à Formspree ou un service d\'email.');">
+                <h2>Envoyer un message</h2>
+                <form action="https://formspree.io/f/mqkngwpl" method="POST">
                     <div class="form-group">
                         <label for="name">Votre Nom / Entreprise</label>
-                        <input type="text" id="name" required placeholder="Ex: Scale AI Recrutement">
+                        <input type="text" id="name" name="name" required placeholder="Ex: Votre nom">
                     </div>
                     <div class="form-group">
                         <label for="email">Votre adresse email</label>
-                        <input type="email" id="email" required placeholder="nom@entreprise.com">
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
                     </div>
                     <div class="form-group">
                         <label for="msg">Votre message</label>
-                        <textarea id="msg" rows="5" required placeholder="Décrivez votre besoin de labellisation ou d'analyse..."></textarea>
+                        <textarea id="msg" name="message" rows="5" required placeholder="Décrivez votre demande..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Envoyer le signal crypté</button>
+                    <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
                 </form>
             </div>
         </div>
